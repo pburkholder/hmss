@@ -1,0 +1,8 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+cookbook 'hashicorp-vault', git: 'https://github.com/pburkholder/vault-cookbook'
+cookbook 'chef-vault', git: 'https://github.com/johnbellone/chef-vault-cookbook'
+cookbook 'poise-service', path: '../poise-service'
+
