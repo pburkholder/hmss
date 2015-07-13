@@ -78,9 +78,9 @@
       "/dev/disk1": {
         "block_size": 512,
         "kb_size": 487350400,
-        "kb_used": 323523148,
-        "kb_available": 163571252,
-        "percent_used": "67%",
+        "kb_used": 379480452,
+        "kb_available": 107613948,
+        "percent_used": "78%",
         "mount": "/",
         "fs_type": "hfs",
         "mount_options": [
@@ -90,8 +90,8 @@
       },
       "devfs": {
         "block_size": 512,
-        "kb_size": 186,
-        "kb_used": 186,
+        "kb_size": 183,
+        "kb_used": 183,
         "kb_available": 0,
         "percent_used": "100%",
         "mount": "/dev",
@@ -128,7 +128,7 @@
           "nobrowse"
         ]
       },
-      "localhost:/RkmDEISctdaSq3IpEPqu19": {
+      "localhost:/iiqsaFefarp_5XU6huacBW": {
         "block_size": 512,
         "kb_size": 487350400,
         "kb_used": 487350400,
@@ -145,16 +145,16 @@
     },
     "kernel": {
       "name": "Darwin",
-      "release": "14.3.0",
-      "version": "Darwin Kernel Version 14.3.0: Mon Mar 23 11:59:05 PDT 2015; root:xnu-2782.20.48~5/RELEASE_X86_64",
+      "release": "14.4.0",
+      "version": "Darwin Kernel Version 14.4.0: Thu May 28 11:35:04 PDT 2015; root:xnu-2782.30.5~1/RELEASE_X86_64",
       "machine": "x86_64",
       "os": "Darwin",
       "modules": {
         "com.apple.kec.corecrypto": {
           "version": "1.0",
-          "size": 638976,
+          "size": 655360,
           "index": "8",
-          "refcount": "4"
+          "refcount": "3"
         },
         "com.apple.kec.pthread": {
           "version": "1",
@@ -205,7 +205,7 @@
           "refcount": "7"
         },
         "com.apple.driver.DiskImages": {
-          "version": "396",
+          "version": "397",
           "size": 102400,
           "index": "17",
           "refcount": "0"
@@ -282,47 +282,47 @@
           "index": "30",
           "refcount": "0"
         },
-        "com.apple.iokit.IOHIDFamily": {
-          "version": "2.0.0",
-          "size": 483328,
-          "index": "31",
-          "refcount": "10"
-        },
-        "com.apple.driver.AppleACPIButtons": {
-          "version": "3.1",
-          "size": 16384,
-          "index": "32",
-          "refcount": "0"
-        },
         "com.apple.driver.AppleRTC": {
           "version": "2.0",
           "size": 32768,
-          "index": "33",
+          "index": "31",
           "refcount": "0"
         },
         "com.apple.driver.AppleEFIRuntime": {
           "version": "2.0",
           "size": 20480,
-          "index": "34",
+          "index": "32",
           "refcount": "1"
         },
-        "com.apple.driver.AppleSmartBatteryManager": {
-          "version": "161.0.0",
-          "size": 32768,
-          "index": "35",
+        "com.apple.iokit.IOHIDFamily": {
+          "version": "2.0.0",
+          "size": 483328,
+          "index": "33",
+          "refcount": "10"
+        },
+        "com.apple.driver.AppleACPIButtons": {
+          "version": "3.1",
+          "size": 16384,
+          "index": "34",
           "refcount": "0"
         },
         "com.apple.driver.AppleEFINVRAM": {
           "version": "2.0",
           "size": 45056,
-          "index": "36",
+          "index": "35",
           "refcount": "1"
+        },
+        "com.apple.driver.AppleSmartBatteryManager": {
+          "version": "161.0.0",
+          "size": 32768,
+          "index": "36",
+          "refcount": "0"
         },
         "com.apple.iokit.IOUSBFamily": {
           "version": "720.4.4",
           "size": 413696,
           "index": "37",
-          "refcount": "17"
+          "refcount": "16"
         },
         "com.apple.driver.AppleUSBXHCI": {
           "version": "710.4.11",
@@ -402,22 +402,28 @@
           "index": "52",
           "refcount": "0"
         },
-        "com.apple.driver.AppleUSBHub": {
-          "version": "705.4.2",
-          "size": 114688,
-          "index": "53",
-          "refcount": "0"
-        },
         "com.apple.BootCache": {
           "version": "36",
           "size": 40960,
+          "index": "53",
+          "refcount": "0"
+        },
+        "com.apple.AppleFSCompression.AppleFSCompressionTypeZlib": {
+          "version": "1.0.0",
+          "size": 24576,
           "index": "54",
           "refcount": "0"
         },
         "com.apple.driver.CoreStorage": {
-          "version": "471.20.7",
+          "version": "471.30.1",
           "size": 909312,
-          "index": "58",
+          "index": "57",
+          "refcount": "0"
+        },
+        "com.apple.driver.AppleUSBHub": {
+          "version": "705.4.2",
+          "size": 114688,
+          "index": "59",
           "refcount": "0"
         },
         "com.apple.driver.AppleUSBComposite": {
@@ -480,53 +486,65 @@
           "index": "71",
           "refcount": "0"
         },
+        "com.apple.driver.AppleUSBEthernet": {
+          "version": "2.4.13",
+          "size": 49152,
+          "index": "72",
+          "refcount": "0"
+        },
+        "com.apple.driver.AppleThunderboltIP": {
+          "version": "2.0.2",
+          "size": 94208,
+          "index": "75",
+          "refcount": "0"
+        },
+        "com.apple.vecLib.kext": {
+          "version": "1.2.0",
+          "size": 491520,
+          "index": "76",
+          "refcount": "2"
+        },
+        "com.apple.iokit.IOAudioFamily": {
+          "version": "203.3",
+          "size": 196608,
+          "index": "77",
+          "refcount": "4"
+        },
+        "com.apple.iokit.IOHDAFamily": {
+          "version": "272.18.1",
+          "size": 49152,
+          "index": "78",
+          "refcount": "2"
+        },
         "com.apple.iokit.IOGraphicsFamily": {
           "version": "2.4.1",
           "size": 241664,
-          "index": "73",
+          "index": "79",
           "refcount": "19"
+        },
+        "com.apple.driver.AppleHDAController": {
+          "version": "272.18.1",
+          "size": 114688,
+          "index": "80",
+          "refcount": "1"
+        },
+        "com.apple.driver.AppleMCCSControl": {
+          "version": "1.2.12",
+          "size": 57344,
+          "index": "82",
+          "refcount": "0"
         },
         "com.apple.iokit.IONDRVSupport": {
           "version": "2.4.1",
           "size": 65536,
-          "index": "74",
+          "index": "83",
           "refcount": "5"
         },
         "com.apple.driver.AppleSMC": {
           "version": "3.1.9",
           "size": 106496,
-          "index": "75",
-          "refcount": "4"
-        },
-        "com.apple.iokit.IOAcceleratorFamily2": {
-          "version": "156.14",
-          "size": 454656,
-          "index": "76",
-          "refcount": "3"
-        },
-        "com.apple.AppleGraphicsDeviceControl": {
-          "version": "3.10.22",
-          "size": 24576,
-          "index": "77",
-          "refcount": "4"
-        },
-        "com.apple.driver.AppleIntelFramebufferAzul": {
-          "version": "10.0.6",
-          "size": 307200,
-          "index": "78",
-          "refcount": "0"
-        },
-        "com.apple.iokit.IOUSBUserClient": {
-          "version": "705.4.0",
-          "size": 12288,
-          "index": "79",
-          "refcount": "1"
-        },
-        "com.apple.driver.AppleGraphicsControl": {
-          "version": "3.10.22",
-          "size": 12288,
           "index": "84",
-          "refcount": "2"
+          "refcount": "4"
         },
         "com.apple.driver.AppleBacklightExpert": {
           "version": "1.1.0",
@@ -534,209 +552,203 @@
           "index": "85",
           "refcount": "1"
         },
-        "com.apple.driver.AppleMuxControl": {
-          "version": "3.10.22",
-          "size": 81920,
-          "index": "86",
-          "refcount": "0"
-        },
-        "com.apple.driver.AppleLPC": {
-          "version": "1.7.3",
+        "com.apple.driver.AppleGraphicsControl": {
+          "version": "3.10.24",
           "size": 12288,
+          "index": "87",
+          "refcount": "2"
+        },
+        "com.apple.driver.AppleMuxControl": {
+          "version": "3.10.24",
+          "size": 81920,
           "index": "88",
           "refcount": "0"
         },
-        "com.apple.iokit.IOSlowAdaptiveClockingFamily": {
-          "version": "1.0.0",
-          "size": 20480,
-          "index": "89",
-          "refcount": "1"
-        },
-        "com.apple.driver.AppleIntelSlowAdaptiveClocking": {
-          "version": "4.0.0",
-          "size": 8192,
+        "com.apple.iokit.IOAcceleratorFamily2": {
+          "version": "156.16",
+          "size": 454656,
           "index": "90",
-          "refcount": "0"
+          "refcount": "3"
         },
-        "com.apple.driver.AppleMCCSControl": {
-          "version": "1.2.11",
-          "size": 57344,
-          "index": "92",
-          "refcount": "0"
-        },
-        "com.apple.driver.AppleCameraInterface": {
-          "version": "5.33.0",
-          "size": 688128,
-          "index": "93",
-          "refcount": "0"
-        },
-        "com.apple.vecLib.kext": {
-          "version": "1.2.0",
-          "size": 491520,
-          "index": "95",
-          "refcount": "2"
-        },
-        "com.apple.iokit.IOAudioFamily": {
-          "version": "203.3",
-          "size": 196608,
-          "index": "96",
+        "com.apple.AppleGraphicsDeviceControl": {
+          "version": "3.10.24",
+          "size": 28672,
+          "index": "91",
           "refcount": "4"
         },
-        "com.apple.iokit.IOHDAFamily": {
-          "version": "272.18",
-          "size": 49152,
-          "index": "97",
-          "refcount": "2"
-        },
-        "com.apple.driver.AppleHDAController": {
-          "version": "272.18",
-          "size": 114688,
-          "index": "98",
-          "refcount": "1"
-        },
-        "com.apple.driver.X86PlatformPlugin": {
-          "version": "1.0.0",
-          "size": 94208,
-          "index": "102",
-          "refcount": "1"
-        },
-        "com.apple.nvidia.driver.NVDAResman": {
-          "version": "10.0.2",
-          "size": 2580480,
-          "index": "104",
-          "refcount": "2"
-        },
-        "com.apple.nvidia.driver.NVDAGK100Hal": {
-          "version": "10.0.2",
-          "size": 1761280,
-          "index": "105",
-          "refcount": "0"
-        },
-        "com.apple.GeForce": {
-          "version": "10.0.2",
-          "size": 614400,
-          "index": "106",
-          "refcount": "0"
-        },
-        "com.apple.driver.AppleHV": {
-          "version": "1",
-          "size": 45056,
-          "index": "107",
+        "com.apple.driver.AppleIntelFramebufferAzul": {
+          "version": "10.0.6",
+          "size": 307200,
+          "index": "92",
           "refcount": "0"
         },
         "com.apple.iokit.IOSurface": {
           "version": "97.4",
           "size": 77824,
-          "index": "109",
+          "index": "93",
           "refcount": "1"
         },
         "com.apple.driver.AppleIntelHD5000Graphics": {
           "version": "10.0.6",
           "size": 393216,
-          "index": "110",
+          "index": "94",
           "refcount": "0"
         },
-        "com.apple.driver.AppleThunderboltIP": {
-          "version": "2.0.2",
-          "size": 94208,
-          "index": "111",
-          "refcount": "0"
-        },
-        "com.apple.driver.AppleHWAccess": {
-          "version": "1",
+        "com.apple.driver.AppleLPC": {
+          "version": "1.7.3",
           "size": 12288,
+          "index": "96",
+          "refcount": "0"
+        },
+        "com.apple.nvidia.driver.NVDAResman": {
+          "version": "10.0.4",
+          "size": 2629632,
+          "index": "97",
+          "refcount": "2"
+        },
+        "com.apple.iokit.IOSlowAdaptiveClockingFamily": {
+          "version": "1.0.0",
+          "size": 20480,
+          "index": "99",
+          "refcount": "1"
+        },
+        "com.apple.driver.AppleIntelSlowAdaptiveClocking": {
+          "version": "4.0.0",
+          "size": 8192,
+          "index": "100",
+          "refcount": "0"
+        },
+        "com.apple.iokit.IOUSBUserClient": {
+          "version": "705.4.0",
+          "size": 12288,
+          "index": "104",
+          "refcount": "1"
+        },
+        "com.apple.driver.AppleCameraInterface": {
+          "version": "5.36.0",
+          "size": 688128,
+          "index": "105",
+          "refcount": "0"
+        },
+        "com.apple.nvidia.driver.NVDAGK100Hal": {
+          "version": "10.0.4",
+          "size": 1769472,
+          "index": "108",
+          "refcount": "0"
+        },
+        "com.apple.GeForce": {
+          "version": "10.0.4",
+          "size": 618496,
+          "index": "109",
+          "refcount": "0"
+        },
+        "com.apple.driver.X86PlatformPlugin": {
+          "version": "1.0.0",
+          "size": 94208,
+          "index": "110",
+          "refcount": "1"
+        },
+        "com.apple.driver.AppleHV": {
+          "version": "1",
+          "size": 45056,
           "index": "114",
           "refcount": "0"
         },
         "com.apple.driver.AppleUpstreamUserClient": {
           "version": "3.6.1",
           "size": 20480,
+          "index": "115",
+          "refcount": "0"
+        },
+        "com.apple.driver.AppleHWAccess": {
+          "version": "1",
+          "size": 12288,
           "index": "116",
           "refcount": "0"
         },
         "com.apple.iokit.IOUserEthernet": {
           "version": "1.0.1",
           "size": 24576,
-          "index": "117",
+          "index": "118",
           "refcount": "0"
         },
         "com.avatron.AVExVideo": {
           "version": "3.0.1",
           "size": 40960,
-          "index": "118",
+          "index": "119",
           "refcount": "1"
         },
         "com.avatron.AVExFramebuffer": {
           "version": "3.0.1",
           "size": 77824,
-          "index": "119",
+          "index": "120",
           "refcount": "0"
         },
         "com.apple.kext.OSvKernDSPLib": {
           "version": "1.15",
           "size": 77824,
-          "index": "120",
-          "refcount": "1"
-        },
-        "com.apple.driver.DspFuncLib": {
-          "version": "272.18",
-          "size": 1249280,
           "index": "121",
           "refcount": "1"
         },
-        "com.apple.driver.AppleHDA": {
-          "version": "272.18",
-          "size": 700416,
+        "com.apple.driver.DspFuncLib": {
+          "version": "272.18.1",
+          "size": 1249280,
           "index": "122",
+          "refcount": "1"
+        },
+        "com.apple.driver.AppleHDA": {
+          "version": "272.18.1",
+          "size": 700416,
+          "index": "123",
           "refcount": "0"
         },
         "com.apple.driver.AppleGraphicsDevicePolicy": {
           "version": "3.7.7",
           "size": 28672,
-          "index": "124",
+          "index": "125",
           "refcount": "0"
         },
         "com.apple.driver.AppleOSXWatchdog": {
           "version": "1",
           "size": 16384,
-          "index": "125",
+          "index": "126",
           "refcount": "0"
         },
         "com.apple.driver.X86PlatformShim": {
           "version": "1.0.0",
           "size": 28672,
-          "index": "126",
+          "index": "127",
           "refcount": "1"
         },
         "com.apple.driver.AGPM": {
-          "version": "110.19.5",
+          "version": "110.19.6",
           "size": 81920,
-          "index": "127",
-          "refcount": "0"
-        },
-        "com.apple.driver.AudioAUUC": {
-          "version": "1.70",
-          "size": 20480,
           "index": "129",
-          "refcount": "0"
-        },
-        "com.apple.kext.triggers": {
-          "version": "1.0",
-          "size": 20480,
-          "index": "130",
-          "refcount": "2"
-        },
-        "com.apple.filesystems.autofs": {
-          "version": "3.0",
-          "size": 36864,
-          "index": "131",
           "refcount": "0"
         },
         "com.apple.iokit.IOSerialFamily": {
           "version": "11",
           "size": 57344,
+          "index": "130",
+          "refcount": "1"
+        },
+        "com.apple.kext.triggers": {
+          "version": "1.0",
+          "size": 20480,
           "index": "132",
           "refcount": "1"
+        },
+        "com.apple.filesystems.autofs": {
+          "version": "3.0",
+          "size": 36864,
+          "index": "133",
+          "refcount": "0"
+        },
+        "com.apple.driver.AudioAUUC": {
+          "version": "1.70",
+          "size": 20480,
+          "index": "134",
+          "refcount": "0"
         },
         "org.virtualbox.kext.VBoxDrv": {
           "version": "4.3.18",
@@ -747,70 +759,52 @@
         "org.virtualbox.kext.VBoxUSB": {
           "version": "4.3.18",
           "size": 32768,
-          "index": "136",
+          "index": "137",
           "refcount": "0"
         },
         "org.virtualbox.kext.VBoxNetFlt": {
           "version": "4.3.18",
           "size": 20480,
-          "index": "137",
+          "index": "138",
           "refcount": "0"
         },
         "org.virtualbox.kext.VBoxNetAdp": {
           "version": "4.3.18",
           "size": 24576,
-          "index": "138",
-          "refcount": "0"
-        },
-        "com.apple.filesystems.smbfs": {
-          "version": "3.0.1",
-          "size": 364544,
           "index": "139",
           "refcount": "0"
         },
-        "com.vmware.kext.vmioplug.12.1.19": {
-          "version": "12.1.19",
-          "size": 24576,
-          "index": "144",
-          "refcount": "0"
-        },
         "com.apple.driver.AppleMultitouchDriver": {
-          "version": "263.9.1",
+          "version": "264.6",
           "size": 147456,
-          "index": "155",
+          "index": "141",
           "refcount": "1"
         },
         "com.apple.driver.AppleBluetoothMultitouch": {
           "version": "85.3",
           "size": 45056,
-          "index": "157",
-          "refcount": "0"
-        },
-        "com.apple.driver.AppleUSBEthernet": {
-          "version": "2.4.13",
-          "size": 49152,
-          "index": "167",
+          "index": "143",
           "refcount": "0"
         },
         "com.apple.driver.AppleHIDKeyboard": {
           "version": "176.2",
-          "size": 24576,
-          "index": "168",
+          "size": 32768,
+          "index": "144",
           "refcount": "1"
         },
         "com.apple.driver.AppleBluetoothHIDKeyboard": {
           "version": "176.2",
-          "size": 12288,
-          "index": "169",
+          "size": 16384,
+          "index": "145",
           "refcount": "0"
         }
       }
     },
     "memory": {
       "total": "16384MB",
-      "active": "8106MB",
-      "inactive": "5166MB",
-      "free": "3109MB"
+      "active": "9271MB",
+      "inactive": "4661MB",
+      "free": "2450MB"
     },
     "network": {
       "interfaces": {
@@ -867,6 +861,40 @@
           "number": "0",
           "encapsulation": "6to4"
         },
+        "en6": {
+          "addresses": {
+            "80:49:71:10:72:ae": {
+              "family": "lladdr"
+            },
+            "fe80::8249:71ff:fe10:72ae": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link"
+            },
+            "192.168.1.15": {
+              "family": "inet",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.1.255"
+            }
+          },
+          "mtu": "1500",
+          "flags": [
+            "UP",
+            "BROADCAST",
+            "SMART",
+            "RUNNING",
+            "SIMPLEX",
+            "MULTICAST"
+          ],
+          "type": "en",
+          "number": "6",
+          "encapsulation": "Ethernet",
+          "arp": {
+            "192.168.1.1": "0:26:b8:bd:cb:3d",
+            "192.168.1.16": "0:23:cc:51:da:c8",
+            "192.168.1.255": "ff:ff:ff:ff:ff:ff"
+          }
+        },
         "en0": {
           "addresses": {
             "80:e6:50:10:31:5a": {
@@ -897,9 +925,8 @@
           "encapsulation": "Ethernet",
           "arp": {
             "192.168.1.1": "0:26:b8:bd:cb:3d",
-            "192.168.1.9": "54:27:1e:ed:f3:60",
-            "192.168.1.11": "e0:c9:7a:94:4c:39",
-            "192.168.1.16": "0:23:cc:51:da:c8"
+            "192.168.1.16": "0:23:cc:51:da:c8",
+            "192.168.1.255": "ff:ff:ff:ff:ff:ff"
           }
         },
         "en1": {
@@ -942,25 +969,6 @@
           "number": "2",
           "encapsulation": "Ethernet"
         },
-        "bridge0": {
-          "addresses": {
-            "82:e6:50:01:49:00": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "UP",
-            "BROADCAST",
-            "SMART",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "bridge",
-          "number": "0",
-          "encapsulation": "Ethernet"
-        },
         "p2p0": {
           "addresses": {
             "02:e6:50:10:31:5a": {
@@ -979,12 +987,31 @@
           "number": "0",
           "encapsulation": "Ethernet"
         },
+        "bridge0": {
+          "addresses": {
+            "82:49:71:01:89:00": {
+              "family": "lladdr"
+            }
+          },
+          "mtu": "1500",
+          "flags": [
+            "UP",
+            "BROADCAST",
+            "SMART",
+            "RUNNING",
+            "SIMPLEX",
+            "MULTICAST"
+          ],
+          "type": "bridge",
+          "number": "0",
+          "encapsulation": "Ethernet"
+        },
         "awdl0": {
           "addresses": {
-            "e6:e5:e4:03:4a:8c": {
+            "ce:10:5d:38:a1:64": {
               "family": "lladdr"
             },
-            "fe80::e4e5:e4ff:fe03:4a8c": {
+            "fe80::cc10:5dff:fe38:a164": {
               "family": "inet6",
               "prefixlen": "64",
               "scope": "Link"
@@ -1003,194 +1030,24 @@
           "number": "0",
           "encapsulation": "Ethernet"
         },
-        "en6": {
+        "utun0": {
           "addresses": {
-            "80:49:71:10:72:ae": {
-              "family": "lladdr"
-            },
-            "fe80::8249:71ff:fe10:72ae": {
+            "fe80::3348:f813:8876:6a64": {
               "family": "inet6",
               "prefixlen": "64",
               "scope": "Link"
-            },
-            "192.168.1.17": {
-              "family": "inet",
-              "netmask": "255.255.255.0",
-              "broadcast": "192.168.1.255"
             }
           },
           "mtu": "1500",
           "flags": [
             "UP",
-            "BROADCAST",
-            "SMART",
+            "POINTOPOINT",
             "RUNNING",
-            "SIMPLEX",
             "MULTICAST"
           ],
-          "type": "en",
-          "number": "6",
-          "encapsulation": "Ethernet",
-          "arp": {
-            "192.168.1.1": "0:26:b8:bd:cb:3d",
-            "192.168.1.9": "54:27:1e:ed:f3:60",
-            "192.168.1.11": "e0:c9:7a:94:4c:39",
-            "192.168.1.16": "0:23:cc:51:da:c8",
-            "192.168.1.255": "ff:ff:ff:ff:ff:ff"
-          }
-        },
-        "vboxnet0": {
-          "addresses": {
-            "0a:00:27:00:00:00": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
+          "type": "utun",
           "number": "0",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet1": {
-          "addresses": {
-            "0a:00:27:00:00:01": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "1",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet2": {
-          "addresses": {
-            "0a:00:27:00:00:02": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "2",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet3": {
-          "addresses": {
-            "0a:00:27:00:00:03": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "3",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet4": {
-          "addresses": {
-            "0a:00:27:00:00:04": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "4",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet5": {
-          "addresses": {
-            "0a:00:27:00:00:05": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "5",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet6": {
-          "addresses": {
-            "0a:00:27:00:00:06": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "6",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet7": {
-          "addresses": {
-            "0a:00:27:00:00:07": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "7",
-          "encapsulation": "Ethernet"
-        },
-        "vboxnet8": {
-          "addresses": {
-            "0a:00:27:00:00:08": {
-              "family": "lladdr"
-            }
-          },
-          "mtu": "1500",
-          "flags": [
-            "BROADCAST",
-            "RUNNING",
-            "SIMPLEX",
-            "MULTICAST"
-          ],
-          "type": "vboxnet",
-          "number": "8",
-          "encapsulation": "Ethernet"
+          "encapsulation": "Unknown"
         }
       },
       "default_gateway": "192.168.1.1",
@@ -1211,7 +1068,7 @@
         "net.inet.ip.forwarding": "0",
         "net.inet.ip.redirect": "1",
         "net.inet.ip.ttl": "64",
-        "net.inet.ip.rtexpire": "10",
+        "net.inet.ip.rtexpire": "210",
         "net.inet.ip.rtminexpire": "10",
         "net.inet.ip.rtmaxcache": "128",
         "net.inet.ip.sourceroute": "0",
@@ -1263,7 +1120,7 @@
         "net.inet.ip.check_interface": "0",
         "net.inet.ip.linklocal.in.allowbadttl": "1",
         "net.inet.ip.random_id": "1",
-        "net.inet.ip.maxchainsent": "45",
+        "net.inet.ip.maxchainsent": "11",
         "net.inet.ip.select_srcif_debug": "0",
         "net.inet.icmp.maskrepl": "0",
         "net.inet.icmp.icmplim": "250",
@@ -1338,8 +1195,8 @@
         "net.inet.tcp.sack_globalholes": "0",
         "net.inet.tcp.minmss": "216",
         "net.inet.tcp.do_tcpdrain": "0",
-        "net.inet.tcp.pcbcount": "99",
-        "net.inet.tcp.tw_pcbcount": "0",
+        "net.inet.tcp.pcbcount": "85",
+        "net.inet.tcp.tw_pcbcount": "3",
         "net.inet.tcp.icmp_may_rst": "1",
         "net.inet.tcp.strict_rfc1948": "0",
         "net.inet.tcp.isn_reseed_interval": "0",
@@ -1356,14 +1213,14 @@
         "net.inet.tcp.timer_fastmode_idlemax": "10",
         "net.inet.tcp.broken_peer_syn_rxmit_thres": "7",
         "net.inet.tcp.broken_peer_syn_rexmit_thres_local": "10",
-        "net.inet.tcp.tcp_timer_advanced": "43",
-        "net.inet.tcp.tcp_resched_timerlist": "53135",
+        "net.inet.tcp.tcp_timer_advanced": "0",
+        "net.inet.tcp.tcp_resched_timerlist": "7689",
         "net.inet.tcp.pmtud_blackhole_detection": "1",
         "net.inet.tcp.pmtud_blackhole_mss": "1200",
         "net.inet.tcp.cc_debug": "0",
         "net.inet.tcp.newreno_sockets": "0",
         "net.inet.tcp.background_sockets": "4",
-        "net.inet.tcp.cubic_sockets": "94",
+        "net.inet.tcp.cubic_sockets": "80",
         "net.inet.tcp.use_newreno": "0",
         "net.inet.tcp.cubic_tcp_friendliness": "0",
         "net.inet.tcp.cubic_fast_convergence": "0",
@@ -1379,7 +1236,7 @@
         "net.inet.udp.recvspace": "196724",
         "net.inet.udp.log_in_vain": "0",
         "net.inet.udp.blackhole": "0",
-        "net.inet.udp.pcbcount": "96",
+        "net.inet.udp.pcbcount": "79",
         "net.inet.udp.randomize_ports": "1",
         "net.inet.ipsec.def_policy": "1",
         "net.inet.ipsec.esp_trans_deflev": "1",
@@ -1396,7 +1253,7 @@
         "net.inet.ipsec.esp_port": "0",
         "net.inet.raw.maxdgram": "8192",
         "net.inet.raw.recvspace": "8192",
-        "net.inet.raw.pcbcount": "2",
+        "net.inet.raw.pcbcount": "1",
         "net.inet.mptcp.enable": "1",
         "net.inet.mptcp.debug": "0",
         "net.inet.mptcp.mptcp_cap_retr": "2",
@@ -1417,7 +1274,7 @@
         "net.inet.mptcp.rto": "3",
         "net.inet.mptcp.nrto": "3",
         "net.inet.mptcp.tw": "60",
-        "net.link.generic.system.ifcount": "22",
+        "net.link.generic.system.ifcount": "11",
         "net.link.generic.system.if_verbose": "0",
         "net.link.generic.system.dlil_lladdr_ckreq": "0",
         "net.link.generic.system.dlil_verbose": "0",
@@ -1434,7 +1291,7 @@
         "net.link.generic.system.rxpoll": "1",
         "net.link.generic.system.if_bw_smoothing_val": "3",
         "net.link.generic.system.if_bw_measure_size": "10",
-        "net.link.generic.system.dlil_input_threads": "16",
+        "net.link.generic.system.dlil_input_threads": "7",
         "net.link.generic.system.dlil_input_sanity_check": "0",
         "net.link.generic.system.flow_advisory": "1",
         "net.link.generic.system.delaybased_queue": "1",
@@ -1617,18 +1474,7 @@
         "net.alf.loglevel": "55",
         "net.alf.perm": "0",
         "net.alf.defaultaction": "1",
-        "net.alf.mqcount": "0",
-        "net.smb.fs.version": "300064",
-        "net.smb.fs.loglevel": "0",
-        "net.smb.fs.kern_deadtimer": "60",
-        "net.smb.fs.kern_hard_deadtimer": "600",
-        "net.smb.fs.kern_soft_deadtimer": "30",
-        "net.smb.fs.tcpsndbuf": "4194304",
-        "net.smb.fs.tcprcvbuf": "4194304",
-        "net.smb.fs.maxwrite": "524288",
-        "net.smb.fs.maxread": "1048576",
-        "net.smb.fs.maxsegreadsize": "2097152",
-        "net.smb.fs.maxsegwritesize": "2097152"
+        "net.alf.mqcount": "0"
       }
     },
     "counters": {
@@ -1636,9 +1482,9 @@
         "interfaces": {
           "lo0": {
             "rx": {
-              "bytes": "190729",
+              "bytes": "15399",
               "packets": "0",
-              "errors": "191429814",
+              "errors": "11595300",
               "drop": 0,
               "overrun": 0,
               "frame": 0,
@@ -1648,7 +1494,7 @@
             "tx": {
               "bytes": "0",
               "packets": "0",
-              "errors": "191429814",
+              "errors": "11595300",
               "drop": 0,
               "overrun": 0,
               "collisions": "0",
@@ -1700,10 +1546,10 @@
               "compressed": 0
             }
           },
-          "en0": {
+          "en6": {
             "rx": {
-              "bytes": "1009809387",
-              "packets": "990131",
+              "bytes": "105369368",
+              "packets": "125048",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -1712,8 +1558,30 @@
               "multicast": 0
             },
             "tx": {
-              "bytes": "164308556",
-              "packets": "696251",
+              "bytes": "22103994",
+              "packets": "104802",
+              "errors": "0",
+              "drop": 0,
+              "overrun": 0,
+              "collisions": "0",
+              "carrier": 0,
+              "compressed": 0
+            }
+          },
+          "en0": {
+            "rx": {
+              "bytes": "835153",
+              "packets": "5433",
+              "errors": "0",
+              "drop": 0,
+              "overrun": 0,
+              "frame": 0,
+              "compressed": 0,
+              "multicast": 0
+            },
+            "tx": {
+              "bytes": "80891",
+              "packets": "616",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -1766,28 +1634,6 @@
               "compressed": 0
             }
           },
-          "bridge0": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "342",
-              "packets": "1",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
           "p2p0": {
             "rx": {
               "bytes": "0",
@@ -1810,6 +1656,28 @@
               "compressed": 0
             }
           },
+          "bridge0": {
+            "rx": {
+              "bytes": "0",
+              "packets": "0",
+              "errors": "0",
+              "drop": 0,
+              "overrun": 0,
+              "frame": 0,
+              "compressed": 0,
+              "multicast": 0
+            },
+            "tx": {
+              "bytes": "342",
+              "packets": "1",
+              "errors": "0",
+              "drop": 0,
+              "overrun": 0,
+              "collisions": "0",
+              "carrier": 0,
+              "compressed": 0
+            }
+          },
           "awdl0": {
             "rx": {
               "bytes": "0",
@@ -1822,8 +1690,8 @@
               "multicast": 0
             },
             "tx": {
-              "bytes": "382357",
-              "packets": "1901",
+              "bytes": "3750",
+              "packets": "22",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -1832,31 +1700,9 @@
               "compressed": 0
             }
           },
-          "en6": {
+          "utun0": {
             "rx": {
-              "bytes": "666764973",
-              "packets": "769734",
-              "errors": "12",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "270540953",
-              "packets": "655005",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet0": {
-            "rx": {
-              "bytes": "0",
+              "bytes": "3",
               "packets": "0",
               "errors": "0",
               "drop": 0,
@@ -1868,183 +1714,7 @@
             "tx": {
               "bytes": "0",
               "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet1": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet2": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet3": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet4": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet5": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet6": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet7": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "collisions": "0",
-              "carrier": 0,
-              "compressed": 0
-            }
-          },
-          "vboxnet8": {
-            "rx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
-              "drop": 0,
-              "overrun": 0,
-              "frame": 0,
-              "compressed": 0,
-              "multicast": 0
-            },
-            "tx": {
-              "bytes": "0",
-              "packets": "0",
-              "errors": "0",
+              "errors": "268",
               "drop": 0,
               "overrun": 0,
               "collisions": "0",
@@ -2055,17 +1725,17 @@
         }
       }
     },
-    "ipaddress": "192.168.1.17",
+    "ipaddress": "192.168.1.15",
     "macaddress": "80:49:71:10:72:ae",
     "ip6address": "fe80::1",
     "os": "darwin",
-    "os_version": "14.3.0",
+    "os_version": "14.4.0",
     "platform": "mac_os_x",
-    "platform_version": "10.10.3",
-    "platform_build": "14D136",
+    "platform_version": "10.10.4",
+    "platform_build": "14E46",
     "platform_family": "mac_os_x",
-    "uptime_seconds": 189269,
-    "uptime": "2 days 04 hours 34 minutes 29 seconds",
+    "uptime_seconds": 12078,
+    "uptime": "3 hours 21 minutes 18 seconds",
     "languages": {
       "c": {
         "gcc": {
@@ -2092,8 +1762,8 @@
         "archname": "darwin-thread-multi-2level"
       },
       "php": {
-        "version": "5.5.20",
-        "builddate": "Feb 25 2015 23:30:53",
+        "version": "5.5.24",
+        "builddate": "May 19 2015 10:10:05",
         "zend_engine_version": "2.5.0"
       },
       "python": {
@@ -2142,7 +1812,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.11732703447341919,
+        "_SPResponseTime": 0.11808198690414429,
         "_dataType": "SPAirPortData"
       },
       {
@@ -2154,7 +1824,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13897496461868286,
+        "_SPResponseTime": 0.14193296432495117,
         "_dataType": "SPAudioData"
       },
       {
@@ -2166,7 +1836,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13896602392196655,
+        "_SPResponseTime": 0.14196503162384033,
         "_dataType": "SPBluetoothData"
       },
       {
@@ -2178,7 +1848,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1389780044555664,
+        "_SPResponseTime": 0.14191299676895142,
         "_dataType": "SPCardReaderData"
       },
       {
@@ -2190,7 +1860,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13895905017852783,
+        "_SPResponseTime": 0.14194601774215698,
         "_dataType": "SPDiagnosticsData"
       },
       {
@@ -2202,7 +1872,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1389470100402832,
+        "_SPResponseTime": 0.14190495014190674,
         "_dataType": "SPDiscBurningData"
       },
       {
@@ -2214,7 +1884,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13881802558898926,
+        "_SPResponseTime": 0.13844901323318481,
         "_dataType": "SPDisplaysData"
       },
       {
@@ -2226,7 +1896,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13898098468780518,
+        "_SPResponseTime": 0.14197498559951782,
         "_dataType": "SPEthernetData"
       },
       {
@@ -2238,7 +1908,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13895797729492188,
+        "_SPResponseTime": 0.14190900325775146,
         "_dataType": "SPFibreChannelData"
       },
       {
@@ -2250,7 +1920,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13884598016738892,
+        "_SPResponseTime": 0.13860201835632324,
         "_dataType": "SPFireWireData"
       },
       {
@@ -2262,8 +1932,8 @@
           "-detailLevel",
           "full"
         ],
-        "_SPCompletionInterval": 0.02565401792526245,
-        "_SPResponseTime": 0.14193803071975708,
+        "_SPCompletionInterval": 0.03398996591567993,
+        "_SPResponseTime": 0.14652401208877563,
         "_dataType": "SPHardwareDataType",
         "_detailLevel": "-2",
         "_items": [
@@ -2416,7 +2086,7 @@
             "_detailLevel": "0"
           }
         },
-        "_timeStamp": "2015-07-06T18:36:22+00:00",
+        "_timeStamp": "2015-07-13T14:21:06+00:00",
         "_versionInfo": {
           "com.apple.SystemProfiler.SPPlatformReporter": "1443"
         }
@@ -2430,7 +2100,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13880503177642822,
+        "_SPResponseTime": 0.1384260058403015,
         "_dataType": "SPHardwareRAIDData"
       },
       {
@@ -2442,7 +2112,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13920199871063232,
+        "_SPResponseTime": 0.13840103149414062,
         "_dataType": "SPMemoryData"
       },
       {
@@ -2454,7 +2124,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13877999782562256,
+        "_SPResponseTime": 0.13839197158813477,
         "_dataType": "SPModemData"
       },
       {
@@ -2466,7 +2136,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1388300061225891,
+        "_SPResponseTime": 0.1383730173110962,
         "_dataType": "SPNetworkData"
       },
       {
@@ -2478,7 +2148,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1387920379638672,
+        "_SPResponseTime": 0.13836199045181274,
         "_dataType": "SPPCIData"
       },
       {
@@ -2490,7 +2160,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13896697759628296,
+        "_SPResponseTime": 0.1419440507888794,
         "_dataType": "SPParallelATAData"
       },
       {
@@ -2502,7 +2172,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13876396417617798,
+        "_SPResponseTime": 0.13835400342941284,
         "_dataType": "SPParallelSCSIData"
       },
       {
@@ -2514,7 +2184,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14004802703857422,
+        "_SPResponseTime": 0.1350969672203064,
         "_dataType": "SPPrintersData"
       },
       {
@@ -2526,7 +2196,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14010095596313477,
+        "_SPResponseTime": 0.13501203060150146,
         "_dataType": "SPPrintersSoftwareData"
       },
       {
@@ -2538,7 +2208,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14011800289154053,
+        "_SPResponseTime": 0.1351250410079956,
         "_dataType": "SPSASData"
       },
       {
@@ -2550,7 +2220,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13927799463272095,
+        "_SPResponseTime": 0.13507801294326782,
         "_dataType": "SPSerialATAData"
       },
       {
@@ -2562,7 +2232,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13928699493408203,
+        "_SPResponseTime": 0.1350650191307068,
         "_dataType": "SPSoftwareData"
       },
       {
@@ -2574,7 +2244,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13925600051879883,
+        "_SPResponseTime": 0.13497799634933472,
         "_dataType": "SPThunderboltData"
       },
       {
@@ -2586,7 +2256,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13926798105239868,
+        "_SPResponseTime": 0.13493704795837402,
         "_dataType": "SPUSBData"
       },
       {
@@ -2598,7 +2268,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1392030119895935,
+        "_SPResponseTime": 0.1403999924659729,
         "_dataType": "SPWWANData"
       }
     ],
@@ -2614,7 +2284,7 @@
 
       }
     },
-    "ohai_time": 1436207782.7061949,
+    "ohai_time": 1436797266.924575,
     "etc": {
       "passwd": {
         "_amavisd": {

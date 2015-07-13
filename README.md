@@ -17,6 +17,8 @@ Chef, such as:
 https://github.com/pburkholder/conjur_demo
 https://github.com/johnbellone/vault-cookbook
 
+Note: use 'pdbchef' as the chef server
+
 ---
 
 # Desired view - Uichwa Dashboard
@@ -137,7 +139,7 @@ END_SCRIPT
 
 3. Use chef-provisioning to destroy/create autoscale group
 
-----
+---
 
 ## Cookbook: with chef-vault
 
@@ -148,13 +150,13 @@ node.default['sensu']['rabbitmq']['user'] = rmq_items['user']
 node.default['sensu']['rabbitmq']['password'] = rmq_items['password']
 ```
 
----
+----
 
 ## Set up
 
 chef-vault needs no client setup, since it leverages encrypted data bags, but the vault needs to set with the node search that matters
 
-Note: by default vault will run in chef-solo mode
+By default vault will run in chef-solo mode, use `-m client`
 
 ```
 knife vault create \
@@ -166,15 +168,29 @@ knife vault create \
 WARNING: No clients were returned from search, you may not have got what you expected!!
 ```
 
----
+----
 
-# Look at the bags
+## Look at the bags
 
+```
 knife data bag show sensu_vault rabbitmq
+...
 knife data bag show sensu_vault rabbitmq_keys
+...
+# no clients
+# one value for pburkholder-getchef-com
 
-#
+----
 
+## Look at the vault
+
+knife vault show sensu_vault rabbitmq
+
+```
+id:       rabbitmq
+password: password_cv
+user:     sensu_chefvault
+```
 
 
 
