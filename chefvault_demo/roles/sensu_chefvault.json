@@ -1,0 +1,16 @@
+{
+    "name": "sensu_chefvault",
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "description": "Role a sensu_chefvault client",
+    "run_list": [
+        "recipe[apt]",
+        "recipe[chefvault_demo]"
+    ],
+    "env_run_lists" : {
+    },
+    "default_attributes": {
+    },
+    "override_attributes": {
+    }
+}

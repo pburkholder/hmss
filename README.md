@@ -170,6 +170,11 @@ WARNING: No clients were returned from search, you may not have got what you exp
 
 ----
 
+The 'no setup' is a bit of a lie, I forced the sensu_master
+to have a user, `user_from_chef_vault` with https://github.com/pburkholder/chef-monitor/blob/pdb/conjur/recipes/conjurized.rb#L42
+
+----
+
 ## Look at the bags
 
 ```
@@ -179,6 +184,7 @@ knife data bag show sensu_vault rabbitmq_keys
 ...
 # no clients
 # one value for pburkholder-getchef-com
+```
 
 ----
 
@@ -192,6 +198,49 @@ password: password_cv
 user:     sensu_chefvault
 ```
 
+----
+
+## Recipe and role
+
+- see chefvault_demo/roles/sensu_chefvault.json
+- knife role from file !$
+- berks vendor; berks upload
+
+----
+
+## Get some nodes in
+
+- Spin up 26 nodes
+- 52.3.39.55 ip; id: i-2fa41187
+- Bootstrap:
+```
+knife bootstrap 52.3.39.55 \
+  --bootstrap-vault-item sensu_vault::rabbitmq \
+  -N cv_client-i-2fa41187 \
+  -E conjur \
+  --hint ec2 \
+  -r 'role[sensu_chefvault]' \
+  --sudo \
+  -x ubuntu
+```
+```
+knife bootstrap 52.3.39.55 \
+  --bootstrap-vault-json '{"sensu_vault":["rabbitmq"]}' \
+  -N cv_client-i-2fa41187 \
+  -E conjur \
+  --hint ec2 \
+  -r 'role[sensu_chefvault]' \
+  --sudo \
+  -x ubuntu
+
+-- Does provisioning support vault? - Nope
+
+
+
+
++describe Chef::Knife::Bootstrap::ChefVaultHandler do
+spec/unit/knife/bootstrap/chef_vault_handler_spec.rb
+https://github.com/chef/chef/pull/2030/files
 
 
 # AWS notes

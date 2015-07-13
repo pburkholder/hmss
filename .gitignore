@@ -14,3 +14,8 @@ bin/*
 
 .kitchen/
 .kitchen.local.yml
+
+**/clients/
+**/nodes/
+
+berks-cookbooks
