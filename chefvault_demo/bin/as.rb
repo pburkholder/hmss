@@ -10,6 +10,7 @@ def cmd(instance_id, public_dns_name)
     -r 'role[sensu_chefvault]' \
     --sudo \
     -x ubuntu
+#    -x ubuntu 1>#{instance_id}.out 2>#{instance_id}.err &
   END
 end
 
@@ -27,18 +28,13 @@ resp = as.describe_auto_scaling_groups({
 
 as_instances = resp.auto_scaling_groups[0].instances.map{ |i| i.instance_id }
 
-puts "length: #{as_instances.length}"
-
 h = Hash.new()
 resp = ec2.describe_instances({
   instance_ids: as_instances,
 })
 
-puts "length: #{resp.reservations[0].instances.length}"
-
-#unless resp.last_page? do |j|
-  resp.reservations[0].instances.each do |i|
+resp.reservations.each do |r|
+  r.instances.each do |i|
     print cmd(i.instance_id, i.public_dns_name)
   end
-#  resp.next_page
-#end
+end

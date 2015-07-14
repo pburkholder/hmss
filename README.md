@@ -161,7 +161,7 @@ By default vault will run in chef-solo mode, use `-m client`
 ```
 knife vault create \
   sensu_vault rabbitmq -m client \
-   '{"user": "sensu_chefvault", "password": "password_cv"}'  \
+   '{"user": "user_from_chef_vault", "password": "password_from_chef_vault"}'  \
    -S "role:sensu_chefvault" -A "pburkholder-getchef-com"
 ```
 ```
@@ -215,16 +215,6 @@ user:     sensu_chefvault
 - Bootstrap:
 ```
 knife bootstrap 52.3.39.55 \
-  --bootstrap-vault-item sensu_vault::rabbitmq \
-  -N cv_client-i-2fa41187 \
-  -E conjur \
-  --hint ec2 \
-  -r 'role[sensu_chefvault]' \
-  --sudo \
-  -x ubuntu
-```
-```
-knife bootstrap 52.3.39.55 \
   --bootstrap-vault-json '{"sensu_vault":["rabbitmq"]}' \
   -N cv_client-i-2fa41187 \
   -E conjur \
@@ -232,6 +222,9 @@ knife bootstrap 52.3.39.55 \
   -r 'role[sensu_chefvault]' \
   --sudo \
   -x ubuntu
+  ```
+
+  Works for one node, what about others?
 
 -- Does provisioning support vault? - Nope
 
